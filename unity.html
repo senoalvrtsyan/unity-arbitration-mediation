@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Business Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f9f9f9; /* Light gray background color */
+    }
+
+    header {
+      color: #fff;
+      padding: 30px 20px; /* Increased padding */
+      text-align: center;
+      margin: 20px; /* Add margins to header */
+      height: 30vh;
+    }
+    
+    .header-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40vh; /* Occupies about 40% of viewport height */
+      object-fit: cover;
+      z-index: -1; /* Send image to back */
+    }
+
+    .logo {
+      margin-right: auto; /* Move logo to left */
+      margin-left: 5vh; /* Add space between logo and menu */
+    }
+
+    nav {
+      margin-left: auto; /* Move nav to right */
+      margin-right: 20px; /* Add space between menu and right edge */
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px; /* Increase padding for better clickability */
+      border-radius: 5px; /* Rounded corners for menu items */
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      background-color: #465d44; /* Change background color on hover */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    section {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #3a4f3a;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+     /* Dropdown styles */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 20px; /* Adjust padding to match main nav items */
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      opacity: 1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="header-banner.jpg" alt="Header Image" class="header-image"> <!-- Path to your header image -->
+    <div class="nav-bar">
+        <nav>
+          <a href="#">Գլխավոր</a>
+          <a href="#">Մեր մասին</a>
+          <div class="dropdown">
+            <a href="#">Ծառայություններ</a>
+            <div class="dropdown-content">
+              <a href="#">Արբիտրաժ</a>
+              <a href="#">Հաշտարարություն</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Գրադարան</a>
+            <div class="dropdown-content">
+              <a href="#">Կանոնդրություն</a>
+              <a href="#">Կանոնակարգեր</a>
+              <a href="#">Օրենսդրություն</a>
+            </div>
+          </div>
+          <a href="#">Հետադարձ կապ</a>
+        </nav>
+    </div>
+    <img src="white-logo.png" alt="Company Logo" style="height: 215px; padding: 50px;"> 
+  </header>
+
+  <div class="container">
+    <section>
+      <h4>«ՅՈՒՆԻԹԻ» ԱՐԲԻՏՐԱԺԱՅԻՆ ԵՎ ՀԱՇՏԱՐԱՐՈՒԹՅԱՆ ԿԵՆՏՐՈՆ» ՍՊ Ընկերությունը մշտապես գործող արբիտրաժային հաստատություն է, որի նպատակն է անկողմնակալ արբիտրաժային տրիբունալի կողմից վեճի արդարացի լուծումը` առանց անհարկի ձգձգումների և ծախսերի:<br><br> Արբիտրաժային գործընթացը հիմնվում է կողմերի արբիտրաժային համաձայնության վրա, որը կարող է ամրագրվել ինչպես առանձին համաձայնագրով, այնպես էլ կողմերի քաղաքացիաիրավական (առևտրային) պայմանագրում` արբիտրաժային վերապահման տեսքով:<br><br><br><br><br><br><br><br><br><br><br></h4>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Արբիտրաժային կենտրոնի բոլոր իրավունքները պաշտպանված են.</p>
+  </footer>
+
+</body>
+</html>
