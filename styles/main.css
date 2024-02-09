@@ -62,8 +62,6 @@ nav a {
   text-decoration: none;
   padding: 15px;
   /* Increase padding for better clickability */
-  border-radius: 5px;
-  /* Rounded corners for menu items */
   transition: background-color 0.3s ease;
   font-weight: bold;
   font-size: 15px;
@@ -104,6 +102,15 @@ footer {
   display: inline-block;
 }
 
+nav > a {
+  border-radius: 5px;
+}
+
+.dropdown > a {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -116,10 +123,12 @@ footer {
   padding: 0;
   margin: 0;
   list-style: none;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .dropdown-content a {
-  color: black;
+  color: rgb(36, 36, 36);
   padding: 12px 20px;
   /* Adjust padding to match main nav items */
   text-decoration: none;
