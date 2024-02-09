@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  /* Light gray background color */
+}
+
+* {
+  box-sizing: border-box;
+  /* Include padding and border in element's total width and height */
+}
+
+header {
+  color: #fff;
+  padding: 50px 20px 30px 20px;
+  /* Increased padding */
+  text-align: center;
+  /* Add margins to header */
+  background-image: url(../header-banner.jpg);
+  background-size: cover;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  transition: background-color 0.2s ease;
+}
+
+nav.stuck {
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(33 46 38 / 90%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  /* Occupies about 40% of viewport height */
+  object-fit: cover;
+  z-index: -1;
+  /* Send image to back */
+}
+
+.logo {
+  margin-right: auto;
+  /* Move logo to left */
+  margin-left: 5vh;
+  /* Add space between logo and menu */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  /* Increase padding for better clickability */
+  border-radius: 5px;
+  /* Rounded corners for menu items */
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+nav a:hover {
+  background-color: #465d44;
+  /* Change background color on hover */
+}
+
+.header-logo {
+  max-width: 350px;
+  width: 100%;
+  padding: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #3a4f3a;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 32px;
+  background-color: rgb(249 249 249 / 85%);
+  min-width: 160px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 20px;
+  /* Adjust padding to match main nav items */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a span {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.dropdown-content a:hover {
+  background-color: #bbb;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
