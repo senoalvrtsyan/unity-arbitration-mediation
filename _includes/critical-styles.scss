@@ -18,7 +18,7 @@ header {
   /* Increased padding */
   text-align: center;
   /* Add margins to header */
-  background-image: url(../header-banner.jpg);
+  background-image: url(/assets/images/header-banner.jpg);
   background-size: cover;
 }
 
@@ -27,34 +27,18 @@ nav {
   left: 0;
   top: 0;
   width: 100%;
-  padding: 20px 0;
-  transition: background-color 0.2s ease;
+  padding: 30px 0;
+  transition-property: padding, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
 }
 
 nav.stuck {
   width: 100%;
+  padding: 18px 0;
   z-index: 1000;
   background-color: rgb(33 46 38 / 90%);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.header-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 40vh;
-  /* Occupies about 40% of viewport height */
-  object-fit: cover;
-  z-index: -1;
-  /* Send image to back */
-}
-
-.logo {
-  margin-right: auto;
-  /* Move logo to left */
-  margin-left: 5vh;
-  /* Add space between logo and menu */
 }
 
 nav a {
