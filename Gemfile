@@ -3,6 +3,10 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem "jekyll-seo-tag", "~> 2.8"
+gem 'github-pages', group: :jekyll_plugins
 
-gem "jekyll-sitemap", "~> 1.4"
+group :jekyll_plugins do
+
+    gem "jekyll-seo-tag", "~> 2.8"
+    gem "jekyll-sitemap", "~> 1.4"
+end
