@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /
-title: "Happy Jekylling!"
+title: "Unity Arbitration and Mediation"
 ---
 
 <section>
