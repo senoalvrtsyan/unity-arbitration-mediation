@@ -1,0 +1,17 @@
+domain: "unity.law"
+url: "https://unity.law" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Unity Arbitration & Mediation Center" # the name of your site, e.g. ACME Corp.
+lang: hy
+
+sass:
+  style: compressed
+
+collections:
+  pages:
+    output: true
+    path: /
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

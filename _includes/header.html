@@ -1,0 +1,34 @@
+<header>
+  <nav>
+    <a href="/">Գլխավոր</a>
+    <a href="/about">Մեր մասին</a>
+    <div class="dropdown">
+      <a href="#">Ծառայություններ <span>▼</span></a>
+      <div class="dropdown-content">
+        <a href="#">Արբիտրաժ</a>
+        <a href="#">Հաշտարարություն</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Գրադարան <span>▼</span></a>
+      <div class="dropdown-content">
+        <a href="#">Կանոնդրություն</a>
+        <a href="#">Կանոնակարգեր</a>
+        <a href="#">Օրենսդրություն</a>
+      </div>
+    </div>
+    <a href="/contact">Հետադարձ կապ</a>
+  </nav>
+  <img src="/assets/images/unity-arbitration-and-meidation-center-logo.svg" alt="Unity Arbitration & Mediation Center "
+    class="header-logo">
+</header>
+<script>
+  const navNode = document.querySelector("nav");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+      navNode.classList.add("stuck");
+    } else {
+      navNode.classList.remove("stuck");
+    }
+  });
+</script>
